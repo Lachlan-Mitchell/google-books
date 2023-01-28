@@ -1,0 +1,21 @@
+.books_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2%;
+  margin-left: 2%;
+}
+
+.book {
+  width: 20vw;
+  margin: 1%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  .book_info p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+ }
+}
