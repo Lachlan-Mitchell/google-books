@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className={styles.background}>
-      <SearchBar setBooks={setBooks} setSearched={setSearched} />
+      <SearchBar setBooks={setBooks}/>
       
         <div className={styles.books_grid}>
           {
