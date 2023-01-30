@@ -5,11 +5,9 @@ const SearchBar = ({setBooks}) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // make API call to the google books api
-    const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&key=AIzaSyCgA3dkfDGFakYH6jgs0Ye5MFeK-_yFmRw`;
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&maxResults=8&key=AIzaSyCgA3dkfDGFakYH6jgs0Ye5MFeK-_yFmRw`;
     const response = await fetch(url);
     const data = await response.json();
-    // call a function to update the state with the books data
     console.log(data.items)
     setBooks(data.items);
   }

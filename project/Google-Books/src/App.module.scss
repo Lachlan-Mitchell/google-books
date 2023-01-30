@@ -1,3 +1,13 @@
+body {
+  background-image:url("https://wallpaperaccess.com/full/124383.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  color: whitesmoke;
+  font-family: 'Merriweather', serif;
+}
 .books_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -6,16 +16,32 @@
 }
 
 .book {
+  font-family: 'Josefin Sans', sans-serif;
   width: 20vw;
   margin: 1%;
   box-sizing: border-box;
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
+  background-color: burlywood;
+  border: black solid 2px;
+  opacity: 0.8;
+  padding: 1%;
   .book_info p {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    font-family: 'Josefin Slab', serif;
  }
+}
+
+.book:hover {
+  border-color: white;
+}
+
+.no_results {
+  color: red;
+  font-size: 2rem;
+  text-align: center;
 }

@@ -1,7 +1,7 @@
 .SearchBar {
   text-align: center;
   font-size: 2rem;
-  margin-top: 5%;
+  margin-top: 2%;
   padding: 1rem;
   border-radius:5px ;
   
@@ -12,10 +12,20 @@ input {
   height: 50px; /* increase the height of the input field */
   padding: 10px; /* add padding to the input field */
   font-size: 20px; /* increase the font size of the input field */
+  background-color:  burlywood;
+  border: black 2px solid;
 }
 
 .searchButton{
   width: 100px;
-  height: 80px;
+  height: 74px;
   font-size:20px;
+  background-color:  burlywood;
+  border: black 2px solid;
+}
+
+.searchButton:hover {
+  cursor: pointer;
+  background-color: rgb(224, 179, 121);
+  border-color: white;
 }
